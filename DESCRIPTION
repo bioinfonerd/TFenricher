@@ -26,11 +26,8 @@ Imports:
 	tximportData,
 	pasilla,
 	IHW,
-	tidyr,
-	devtools,
-	indRa
+	tidyr
 RoxygenNote: 6.1.1
 Suggests: 
-    knitr,
-    rmarkdown
+    knitr
 VignetteBuilder: knitr

@@ -1,0 +1,470 @@
+AATF	Transcription-Factor-Repressives	BAX
+ABL1	Transcription-Factor-Repressives	BCL2	BCL6	JUN
+AHR	Transcription-Factor-Repressives	CA9	CYP1A1
+AIP	Transcription-Factor-Repressives	GREB1	NFKB2	RSF1	TFF1
+ANKRD1	Transcription-Factor-Repressives	NPPA
+APBB1	Transcription-Factor-Repressives	GMPS
+APC	Transcription-Factor-Repressives	AKT1	AMHR2	DNMT1	MYC	ODC1	PTGS2	SGK1
+APEX1	Transcription-Factor-Repressives	CYP11B2	PTH
+AR	Transcription-Factor-Repressives	AKR1C3	AKT1	BTG1	BTG2	CDH1	CDKN1A	CLK3	CRH	CYP7B1	KLK3	MUC1	NFKB1	NRAS	PTGS2	RELA	REST	SEPT7	SERPINB5	TSC1	TSC2	UCN	VIM	WEE1	XIAP
+ARNT	Transcription-Factor-Repressives	CCNE1	CDK2	FOS	JUN
+ASCL1	Transcription-Factor-Repressives	DKK1	IGF2	PCSK6	TPH1
+ATF1	Transcription-Factor-Repressives	CCNA1	FTH1
+ATF2	Transcription-Factor-Repressives	KAT5	NOS3	TGFB2
+ATF3	Transcription-Factor-Repressives	ADIPOR1	ADIPOR2	ID1	LDLR	MMP2	SELE
+ATF4	Transcription-Factor-Repressives	HSPA5	IRF7	SIRT1	SIRT2
+ATF5	Transcription-Factor-Repressives	ID1
+ATF6	Transcription-Factor-Repressives	MAFA	PDX1
+ATM	Transcription-Factor-Repressives	BCL2	CFLAR	PMAIP1	PVR	SLC2A1	SP1	TERF1	TNFRSF10B	VEGFA
+ATRX	Transcription-Factor-Repressives	HBA1	HBA2
+BACH1	Transcription-Factor-Repressives	HMOX1
+BACH2	Transcription-Factor-Repressives	XBP1
+BCL3	Transcription-Factor-Repressives	CTCF	NFKB1
+BCL6	Transcription-Factor-Repressives	BCL2L1	BCL6	CCND2	CD80	CDKN1A	CDKN2B	CHEK1	FCER2	HDAC7	IRF4	LITAF	NFKB1	PDCD2	SUMO1	XBP1
+BHLHE41	Transcription-Factor-Repressives	CCND1	MLH1
+BMI1	Transcription-Factor-Repressives	TERT
+BRCA1	Transcription-Factor-Repressives	AREG	CDH3	CTSD	CXCL1	E2F6	EGFR	FOXC1	FOXC2	GADD45A	HMGA2	HNRNPA2B1	HSPA5	IGF1	KHSRP	TFF1
+BRD7	Transcription-Factor-Repressives	E2F3
+BTAF1	Transcription-Factor-Repressives	DR1	TBP
+BTF3	Transcription-Factor-Repressives	MADCAM1	MRVI1	NFKB1	RRAS2	SSPN
+BTG2	Transcription-Factor-Repressives	CCND1	HRAS	KLK3
+CBFA2T3	Transcription-Factor-Repressives	ZNF652
+CBX7	Transcription-Factor-Repressives	CCNE1
+CBX8	Transcription-Factor-Repressives	CDKN1A
+CDCA7L	Transcription-Factor-Repressives	MAOB
+CDX2	Transcription-Factor-Repressives	IGFBP3	PTGS2
+CEBPA	Transcription-Factor-Repressives	BCL2	MYC
+CEBPB	Transcription-Factor-Repressives	CYP19A1	GFER	PTGS2
+CEBPD	Transcription-Factor-Repressives	CYP19A1	DDIT3
+CEBPE	Transcription-Factor-Repressives	GATA1	MYC	PRG2	SPI1
+CEBPZ	Transcription-Factor-Repressives	COL11A1	MLH1
+CHD4	Transcription-Factor-Repressives	CD79A
+CIITA	Transcription-Factor-Repressives	COL1A1	COL1A2	IL4	MMP9	S100A4	SIRT1
+CITED2	Transcription-Factor-Repressives	MMP1	MMP13
+CLOCK	Transcription-Factor-Repressives	NR3C1
+COPS5	Transcription-Factor-Repressives	CDKN1B
+CREB1	Transcription-Factor-Repressives	HMOX1	IFNG	JUN	NR2F1	NR2F6	PLAT	SNAI1	SNAI2
+CREB3L1	Transcription-Factor-Repressives	SLC1A4
+CREB5	Transcription-Factor-Repressives	DGKG	LGALS3BP	LY96	RASGRP3	RDX	STAT1	TNFRSF11B
+CREG1	Transcription-Factor-Repressives	HSPA4
+CREM	Transcription-Factor-Repressives	CCL4	CCNA2	CD247	CREB1	DUSP1	DUSP4	FASLG	FOS	G6PD	IL2	MC2R	SLC5A5
+CRX	Transcription-Factor-Repressives	RBP3	RHO
+CTBP1	Transcription-Factor-Repressives	BRCA1	BRCA2	CLDN7
+CTCF	Transcription-Factor-Repressives	APP	BCL6	MYC	PAX6	TERT
+CTNNB1	Transcription-Factor-Repressives	CCND1	RB1
+DACH1	Transcription-Factor-Repressives	FOS	TNFSF11
+DAXX	Transcription-Factor-Repressives	AIRE
+DDB2	Transcription-Factor-Repressives	BCL2	SOD2
+DDIT3	Transcription-Factor-Repressives	ANKRD1	ASNS	ATF2	ATF5	CEBPA	NOS3	SIRT1	SIRT2	TNFRSF10B
+DEAF1	Transcription-Factor-Repressives	HTR1A
+DEK	Transcription-Factor-Repressives	PRDX5
+DENND4A	Transcription-Factor-Repressives	ERBB2
+DLX4	Transcription-Factor-Repressives	BRCA1
+DNMT1	Transcription-Factor-Repressives	BIRC5	BMP2	CASP8	CDH1	CDKN2A	CXCR4	GAD1	IL3	IL32	MBD2	RB1	RELN	TIMP3	TNFRSF10B
+DNMT3A	Transcription-Factor-Repressives	CDH6	IGFBP3
+DNMT3L	Transcription-Factor-Repressives	TDG
+DR1	Transcription-Factor-Repressives	TBP
+E2F1	Transcription-Factor-Repressives	BIRC5	BRCA1	DIRAS3	DNMT1	ERICD	FHIT	HSPA5	IRF3	KIF2C	MCL1	MDM2	PDK4	PNRC2	SERPINE1	TERT	TLR3	TP53	VEGFA	WWOX
+E2F3	Transcription-Factor-Repressives	ERICD
+E2F4	Transcription-Factor-Repressives	BRCA1	DIRAS3	PCLAF	MCM10	PLK1	PPARG	RAD51	TOPBP1	TTK
+E2F6	Transcription-Factor-Repressives	APAF1	E2F1	PCLAF
+E2F7	Transcription-Factor-Repressives	E2F1
+E2F8	Transcription-Factor-Repressives	E2F1
+E4F1	Transcription-Factor-Repressives	CCNA2
+EAPP	Transcription-Factor-Repressives	CDKN2A	MAOB
+ECD	Transcription-Factor-Repressives	GCGR
+EGR1	Transcription-Factor-Repressives	ALOX5	AR	CXCL8	FAP	FAS	FCER2	HSD11B2	IL6	KLK3	MYB	PTGS2	TNFSF10	VEGFA	WNT4
+EGR2	Transcription-Factor-Repressives	FASLG	SCD5
+EHF	Transcription-Factor-Repressives	DCDC2
+EHMT2	Transcription-Factor-Repressives	SIAH1
+ELF1	Transcription-Factor-Repressives	FCER1A
+ELF3	Transcription-Factor-Repressives	KRT4	MMP9
+ELF4	Transcription-Factor-Repressives	CXCL8	MMP9	TP53
+ELK3	Transcription-Factor-Repressives	MYH6
+ELL	Transcription-Factor-Repressives	BAX	CDKN1A	E2F1	MDM2
+EN1	Transcription-Factor-Repressives	UTRN
+ENO1	Transcription-Factor-Repressives	MYC
+EP300	Transcription-Factor-Repressives	BIRC5	CYBB	LAMA3	MYC	NR1H4	PCNA	THBD
+ERCC2	Transcription-Factor-Repressives	BCL2	LAMTOR5
+ERF	Transcription-Factor-Repressives	ETS2	PRL	UTRN
+ERG	Transcription-Factor-Repressives	CXCL8	EPB41L3	FGF2	ICAM1	ILK	TDRD1
+ESR1	Transcription-Factor-Repressives	BTG2	CD24	CDKN1A	CDKN1B	CRH	CTNNB1	CYP1A1	CYP2C19	NQO1	PTMA	TP53
+ESR2	Transcription-Factor-Repressives	BRCA2	CRH	INSR	SERPINE1
+ESRRA	Transcription-Factor-Repressives	NR2F1	NR2F6	SNAI1	SNAI2
+ETS1	Transcription-Factor-Repressives	BAX	CA9	IL2	MDM2	NDRG1	PARP1	TBXAS1	TERT	TRB
+ETV3	Transcription-Factor-Repressives	NFKB1	RELA
+ETV4	Transcription-Factor-Repressives	ERBB2
+ETV6	Transcription-Factor-Repressives	GAS2	MAD2L1
+EVX1	Transcription-Factor-Repressives	GSC
+EWSR1	Transcription-Factor-Repressives	PHLDA1	TGFBR2
+EZH2	Transcription-Factor-Repressives	ADAMTS1	ADRB2	ALDH1A1	APC	CDH1	CDKN1A	CDKN2A	CDKN2B	CIITA	DACT3	FBXO32	FOXC1	HDAC1	HOXB13	MST1	MYC	PEBP1	PIP5K1C	RUNX3	SATB1	SNAI2	SSTR1	TP53	TWIST1
+FHL2	Transcription-Factor-Repressives	CCND1
+FLI1	Transcription-Factor-Repressives	COL1A2	IGFBP3	MIR708	MMP1	PHLDA1	TGFBR2
+FOS	Transcription-Factor-Repressives	CCND1	CLU	FOS	MMP9	MYC	NFKB1	NOS2	SLC10A2	SPI1
+FOSB	Transcription-Factor-Repressives	TIMP1
+FOSL1	Transcription-Factor-Repressives	ITGAV	ITGB3
+FOSL2	Transcription-Factor-Repressives	TIMP1
+FOXA1	Transcription-Factor-Repressives	ABCA1	BCL2	CFTR	RPRM	SERPINC1
+FOXA2	Transcription-Factor-Repressives	ABCA1	CFTR	PAX6	SERPINC1
+FOXD3	Transcription-Factor-Repressives	MITF
+FOXF2	Transcription-Factor-Repressives	ITGB1	MT1E	MT1F	PDGFA	PSG7
+FOXG1	Transcription-Factor-Repressives	CDKN1A
+FOXH1	Transcription-Factor-Repressives	AR
+FOXI1	Transcription-Factor-Repressives	CFTR
+FOXL2	Transcription-Factor-Repressives	CCND2	CYP11A1	CYP19A1	STAR
+FOXM1	Transcription-Factor-Repressives	CDKN2A	FGB
+FOXN1	Transcription-Factor-Repressives	DSG4
+FOXO1	Transcription-Factor-Repressives	AR	EGR1	FSHB	IGFBP1	TXNIP
+FOXO3	Transcription-Factor-Repressives	CCND2	FOXM1	MYOCD
+FOXO4	Transcription-Factor-Repressives	HIF1A
+FOXP1	Transcription-Factor-Repressives	KLK3
+FOXP2	Transcription-Factor-Repressives	CNTNAP2	MET	NKX2-1
+FOXP3	Transcription-Factor-Repressives	BRCA1	IL2
+FUS	Transcription-Factor-Repressives	MDM2
+GATA1	Transcription-Factor-Repressives	CBFB	CEBPA	DACH1	EPO	HEMGN	PTGFR	SPI1	ZNF268
+GATA2	Transcription-Factor-Repressives	CYBB	EPO	PPARG	PRG2	SPI1
+GATA3	Transcription-Factor-Repressives	CDH3	CXCL1	EPO	FOXC1	FOXC2	HSD17B1	IL12RB2	LOX	STAT4
+GATA4	Transcription-Factor-Repressives	ERBB2	HDAC9
+GATA6	Transcription-Factor-Repressives	CAV1	PLAU
+GFI1	Transcription-Factor-Repressives	BAX	CYP27B1
+GFI1B	Transcription-Factor-Repressives	MEF2C
+GLI1	Transcription-Factor-Repressives	BCL2	EGR2	FAS	H2AFX	TNFRSF10B
+GLI2	Transcription-Factor-Repressives	CDH1	FAS	H2AFX	TNFRSF10B
+GLI3	Transcription-Factor-Repressives	HLA-G
+GZF1	Transcription-Factor-Repressives	HOXA10
+HAX1	Transcription-Factor-Repressives	ATP2A2
+HBP1	Transcription-Factor-Repressives	CDKN1A	DNMT1	MIF	NCF1
+HCFC1	Transcription-Factor-Repressives	E2F4
+HDAC1	Transcription-Factor-Repressives	ABCB1	BAMBI	BRCA2	CCND1	CCND2	CD1D	CD44	CD82	CDH1	CDKN1A	E2F1	EGFR	EGR1	EIF2AK1	ESR1	FOS	GAD1	HLA-DRA	HSPA5	IL2	KLF4	MMP28	MMP9	PCNA	PHB	RARB	RECK	RECQL4	RELN	RHOB	RUNX3	SNAI2	SP1	SPP1	TFF1	TJP1	TP53	TXNIP
+HDAC10	Transcription-Factor-Repressives	TXNIP
+HDAC11	Transcription-Factor-Repressives	IL10	IL17A	TNF
+HDAC2	Transcription-Factor-Repressives	APAF1	BMP7	CCNE1	CD1D	CDH1	COL1A2	CXCL8	DNMT1	KLF4	MUC5AC	PHB	SNAI2	SP1	TGFBR2	TNFSF10	TWIST1
+HDAC3	Transcription-Factor-Repressives	CDH1	CDKN2A	CXCR4	GAS2	GATA2	GRHL1	IFNA1	JUN	MMP2	MYC
+HDAC4	Transcription-Factor-Repressives	CDKN1A	CDKN2A	HOXB13	IL10	JUN	MEF2A	MMP13	RUNX2	VEGFA	WT1
+HDAC5	Transcription-Factor-Repressives	FGF2	MEF2A	SLC2A4	SLIT2	WT1
+HDAC7	Transcription-Factor-Repressives	ACTN4	AKAP12	ESR1	HDC	HIF1A	MEF2A	MEF2C	MEF2D	MMP10
+HDAC9	Transcription-Factor-Repressives	CFLAR	CITED2	DIRAS3	ESR1	HSPA5	IGFBP1	MEF2A	MYEF2	NFKB1	PRL	RELA	STAT6	TNFRSF10B	TP53
+HDGF	Transcription-Factor-Repressives	CDH1	SMYD1
+HES1	Transcription-Factor-Repressives	ASCL1	CD4	E2F1	MAP2	PTEN	PTGDS
+HES6	Transcription-Factor-Repressives	ASCL1
+HEXIM1	Transcription-Factor-Repressives	CCND1
+HEY1	Transcription-Factor-Repressives	ACTA2	BMP2	GATA4	GATA6	KDR	PROX1
+HEY2	Transcription-Factor-Repressives	ACTA2	GATA4	GATA6
+HEYL	Transcription-Factor-Repressives	AR
+HIC1	Transcription-Factor-Repressives	ACKR3	E2F1	EPHA2	LRP8	MYC	SIRT1	VEGFA	VLDLR
+HIF1A	Transcription-Factor-Repressives	ABCB1	ACE2	APEX1	BID	CCND1	CDH1	HIF1A	MMP2	RECK	SDHB	SLC29A1	TGFB3	VEGFA
+HINFP	Transcription-Factor-Repressives	MBD2
+HIPK2	Transcription-Factor-Repressives	HIF1A	MEF2C	NOX1	VEGFA	VIM
+HIRA	Transcription-Factor-Repressives	PLB1
+HLF	Transcription-Factor-Repressives	RUNX1
+HMGA1	Transcription-Factor-Repressives	BRCA1	CDH1	INSR	XPA
+HNF1A	Transcription-Factor-Repressives	TM4SF1
+HNF4A	Transcription-Factor-Repressives	ABCG5	ABCG8	CYP7A1	GFER	GH1
+HOPX	Transcription-Factor-Repressives	FOS
+HOXA10	Transcription-Factor-Repressives	CDKN1C	EMX2	IL11	KLF9	MYCN	PHGDH	SNAI1
+HOXA11	Transcription-Factor-Repressives	HOXA10
+HOXA9	Transcription-Factor-Repressives	NFKB1	RELA
+HOXB1	Transcription-Factor-Repressives	TCF4
+HOXB13	Transcription-Factor-Repressives	TCF4
+HOXB7	Transcription-Factor-Repressives	CDKN1B	DAPK1	THBS2
+HOXC10	Transcription-Factor-Repressives	HOXB8
+HOXC13	Transcription-Factor-Repressives	DSG4	SPI1
+HOXC6	Transcription-Factor-Repressives	IGFBP3	MME
+HOXC9	Transcription-Factor-Repressives	HOXB8
+HSF1	Transcription-Factor-Repressives	BAG3	CDKN1A	GUCA2B	HSD17B6	IL1B
+HSF2	Transcription-Factor-Repressives	MAP2K4	MAPK8
+HTATIP2	Transcription-Factor-Repressives	MMP2	SPP1	VEGFA
+ID1	Transcription-Factor-Repressives	ZNF148
+ID3	Transcription-Factor-Repressives	TCF3
+ID4	Transcription-Factor-Repressives	BRCA1
+IFI16	Transcription-Factor-Repressives	ICAM1	MYC
+IKBKB	Transcription-Factor-Repressives	CD44	MMP9	NOS2	VCAM1
+ILF3	Transcription-Factor-Repressives	HLA-DRA
+ING1	Transcription-Factor-Repressives	AFP
+ING2	Transcription-Factor-Repressives	BCL2
+ING4	Transcription-Factor-Repressives	ANGPT1	BCL2	CCND1	CXCL8	NGF	NTRK1	PTGS2	SKP2	SPP1
+IRF1	Transcription-Factor-Repressives	BCL2	CCNB1	CCNE1	CDK1	CDK2	CDK4	CDKN1A	DST	E2F1	FOXP3	MYB
+IRF2	Transcription-Factor-Repressives	CXCR4	DST	IFNGR1
+IRF3	Transcription-Factor-Repressives	PURA
+IRF4	Transcription-Factor-Repressives	BCL6	CD68	IRF3
+IRF5	Transcription-Factor-Repressives	PDLIM7
+IRF7	Transcription-Factor-Repressives	IFNB1
+IRF8	Transcription-Factor-Repressives	CD68	GAS2	TLR3
+IRF9	Transcription-Factor-Repressives	CCND2	IL27
+JDP2	Transcription-Factor-Repressives	ATF3	DDIT3
+JUN	Transcription-Factor-Repressives	AR	CCND1	CDKN1A	CTGF	CYP19A1	DCN	IL2	LBP	MMP9	MYC	NOS2	PGR	RARA	RARG	SMN1	TERT	TP53	VEGFA
+JUNB	Transcription-Factor-Repressives	LOR
+JUND	Transcription-Factor-Repressives	BCL6	ITGAV	ITGB3	MDM2	MYB
+KAT2B	Transcription-Factor-Repressives	CDK2	IRF7	ZEB1
+KAT5	Transcription-Factor-Repressives	GMPS	HDC	STAT3
+KCNIP3	Transcription-Factor-Repressives	GCM1	SLC8A3
+KDM2A	Transcription-Factor-Repressives	EREG
+KLF10	Transcription-Factor-Repressives	EGFR	FGFR1	STMN1
+KLF12	Transcription-Factor-Repressives	PRL	TFAP2A
+KLF13	Transcription-Factor-Repressives	LDLR
+KLF14	Transcription-Factor-Repressives	TGFBR2
+KLF15	Transcription-Factor-Repressives	RBP3	RHO
+KLF16	Transcription-Factor-Repressives	CDKN1A
+KLF2	Transcription-Factor-Repressives	CXCR4	FABP5	PPARG	WEE1
+KLF4	Transcription-Factor-Repressives	BIRC5	CCNB1	CCND1	CDKN1A	GDF15	HDC	IFITM3	IL1B	LXN	ODC1	RARA	SOD1	TP53	VDR
+KLF6	Transcription-Factor-Repressives	CCND1	MMP9	PTTG1
+KLF8	Transcription-Factor-Repressives	CDH2	FN1	VIM
+KLF9	Transcription-Factor-Repressives	PMAIP1
+L3MBTL1	Transcription-Factor-Repressives	RUNX1
+LDB1	Transcription-Factor-Repressives	TCF3
+LEF1	Transcription-Factor-Repressives	CD1D	CYLD	DSG4
+LIMD1	Transcription-Factor-Repressives	HIF1A
+LMO2	Transcription-Factor-Repressives	CDH1	GYPA	LEF1	ZEB1
+LMO3	Transcription-Factor-Repressives	ASCL1	HES1
+LMO4	Transcription-Factor-Repressives	BMP7	BRCA1	DLG4
+LRRFIP1	Transcription-Factor-Repressives	EGFR	TNF
+LYL1	Transcription-Factor-Repressives	NFKB1
+MAML1	Transcription-Factor-Repressives	HEY1	TNFRSF12A
+MBD1	Transcription-Factor-Repressives	ALOX5	IRF8	MGMT	SETDB1
+MBD2	Transcription-Factor-Repressives	GSTP1	NANOG
+MECP2	Transcription-Factor-Repressives	CCND1	ESR1	GAD1	IGFBP3	RELN	TFF1
+MEF2A	Transcription-Factor-Repressives	SOST
+MEF2C	Transcription-Factor-Repressives	JUN	NR4A1	SOST
+MEF2D	Transcription-Factor-Repressives	SOST
+MEN1	Transcription-Factor-Repressives	CDKN2C	GAST	JUND	TERT
+MITF	Transcription-Factor-Repressives	BCL2A1
+MLLT10	Transcription-Factor-Repressives	BAX	CDKN1A	MDM2
+MLLT3	Transcription-Factor-Repressives	BAX	CDKN1A	MDM2
+MSC	Transcription-Factor-Repressives	CDC25A	CDC6	LTA	MCM7
+MSX1	Transcription-Factor-Repressives	DKK1
+MSX2	Transcription-Factor-Repressives	BCL2	BGLAP	CDH2
+MTA1	Transcription-Factor-Repressives	CDH1	EPHA2	ESR1	MTA3	PTEN	RNF144A	SMAD7
+MTA2	Transcription-Factor-Repressives	CDH1	FSHR
+MTA3	Transcription-Factor-Repressives	CGB5	SNAI1
+MXD1	Transcription-Factor-Repressives	PTEN	TERT
+MXI1	Transcription-Factor-Repressives	MYC
+MYB	Transcription-Factor-Repressives	BCL2	CD4	CSF3R	ICAM1
+MYC	Transcription-Factor-Repressives	BRD7	CCND1	CD33	CDKN1A	CEBPA	CFLAR	DKK1	FTH1P18	GATA1	IFNA1	JUNB	MST1	NDRG1	NFE2	PRODH	SFRP1
+MYCN	Transcription-Factor-Repressives	ABCB1	CIITA	CLU	DKK3	GRHL1	LRRN3	MXI1	NDRG1	NGFR	NTRK1	SKP2	TP53	TP53INP1
+MZF1	Transcription-Factor-Repressives	MMP2	TERT
+NANOG	Transcription-Factor-Repressives	AFP	CDC25A	CDK6	CDX2	CGA	GATA2	GATA4	GATA6	LAMB1	LXN
+NCOA2	Transcription-Factor-Repressives	AR
+NCOR1	Transcription-Factor-Repressives	ESR1	G0S2	IGFBP3	PPARG	SNAI2
+NEAT1	Transcription-Factor-Repressives	CXCL8
+NELFB	Transcription-Factor-Repressives	TFF1
+NELFCD	Transcription-Factor-Repressives	CCND1	CTNNB1
+NF1	Transcription-Factor-Repressives	AFP	PLAT
+NFAT5	Transcription-Factor-Repressives	CCL2
+NFATC1	Transcription-Factor-Repressives	CD3G	SP1
+NFATC2	Transcription-Factor-Repressives	CD3G
+NFE2L2	Transcription-Factor-Repressives	CFTR	GCLC	GSTA1	HMOX1	NQO1
+NFIA	Transcription-Factor-Repressives	CDKN1A
+NFIC	Transcription-Factor-Repressives	CYP1A1	ITGA5	MATN1
+NFIL3	Transcription-Factor-Repressives	IL1B	TNFSF10
+NFIX	Transcription-Factor-Repressives	CDKN1A
+NFKB1	Transcription-Factor-Repressives	ABCA1	ABCB1	AKT1	AKT2	ALOX5	AR	BACE1	BAX	BCL2	BCL2L1	BCL2L11	BHMT	BIRC2	BIRC3	CCND1	CDKN1A	CFLAR	COL1A2	COL2A1	CTCF	CXCL8	CYP19A1	EGR1	EPCAM	FAS	GKN2	HOXA9	HSD11B2	IL1A	IL6	KLK3	LTC4S	MCL1	MMP9	MYC	NFKBIA	PDK4	PTEN	PTGS2	REPS2	SERPINA3	SERPINE1	THBD	TIMP1	TLR3	TNFSF10	TRAF2	VEGFA	XIAP	YY1
+NFKB2	Transcription-Factor-Repressives	HIF1A
+NFKBIA	Transcription-Factor-Repressives	CCL5	CD40	CD58	EBI3	FAS	ICAM1	IFNB1	IL1B	NFKB1	NOS2	RELA	S100A6	TNFSF10	TRAF1
+NFKBIB	Transcription-Factor-Repressives	IFNB1
+NHLH2	Transcription-Factor-Repressives	ASCL1	HES1
+NKX2-1	Transcription-Factor-Repressives	RET	STK11
+NKX2-5	Transcription-Factor-Repressives	DACT1	DACT2	DACT3	MEF2C
+NKX3-1	Transcription-Factor-Repressives	AR	CCND1	FOS	IGF1R
+NOTCH3	Transcription-Factor-Repressives	APOD	HES1
+NPM1	Transcription-Factor-Repressives	ATF5	MDM2
+NR0B1	Transcription-Factor-Repressives	AMH	CAMP	CYP17A1	CYP19A1	ESRRG	NR1H4	NR5A1	STAR
+NR0B2	Transcription-Factor-Repressives	E2F1	PCK2
+NR1D1	Transcription-Factor-Repressives	ARNTL
+NR1H4	Transcription-Factor-Repressives	ABCC4	CYP7A1	EDN1	UGT2B4
+NR1I2	Transcription-Factor-Repressives	CCL2	NFKB1	NOD1	NOD2	RELA
+NR2F1	Transcription-Factor-Repressives	CYP17A1	DR1	LHCGR	MTTP	SERPINC1
+NR2F2	Transcription-Factor-Repressives	POU5F1
+NR2F6	Transcription-Factor-Repressives	LHCGR
+NR3C1	Transcription-Factor-Repressives	ATF2	ATP1B1	BGLAP	CCND3	CDK4	CDK6	ELK1	ETS1	NFKB1	SRF	STAT1	TP53
+NR3C2	Transcription-Factor-Repressives	ATP1B1	CABIN1
+NR4A1	Transcription-Factor-Repressives	BABAM2	CCNA2	MDM2	RNF7	TNF
+NR4A2	Transcription-Factor-Repressives	MMP1
+NR4A3	Transcription-Factor-Repressives	PPARG
+NR5A1	Transcription-Factor-Repressives	CYP11B2	CYP19A1	NOV	STAR
+NRL	Transcription-Factor-Repressives	RBP3	RHO
+NUPR1	Transcription-Factor-Repressives	MSL1
+ONECUT2	Transcription-Factor-Repressives	SYTL4
+PA2G4	Transcription-Factor-Repressives	E2F1	KLK3
+PARP1	Transcription-Factor-Repressives	BCL2	BRCA2	FOXO1	HTR1A	SERPINF1	SNAI1	THBD
+PAWR	Transcription-Factor-Repressives	BCL2
+PAX2	Transcription-Factor-Repressives	TP53
+PAX3	Transcription-Factor-Repressives	MITF
+PAX4	Transcription-Factor-Repressives	GCG	INS
+PAX5	Transcription-Factor-Repressives	BCL2	BLK	CCND1	MMP1	PRDM1	TP53	XBP1
+PAX6	Transcription-Factor-Repressives	PDHX
+PAX8	Transcription-Factor-Repressives	TG	TP53	TSHR
+PCBD1	Transcription-Factor-Repressives	FXYD2
+PCGF2	Transcription-Factor-Repressives	HOXA7	ZEB1	ZEB2
+PER1	Transcription-Factor-Repressives	BAX	SLC5A1
+PER2	Transcription-Factor-Repressives	SNAI2	TWIST1
+PGR	Transcription-Factor-Repressives	CYP19A1	ERBB2	FOXP3	IL10	PTGS2	RELA
+PHB2	Transcription-Factor-Repressives	ARNT	BTG2
+PHOX2B	Transcription-Factor-Repressives	MSX1
+PIAS1	Transcription-Factor-Repressives	MUC1	PRMT1
+PIAS2	Transcription-Factor-Repressives	LRRN3	MUC1	MYCN
+PIAS3	Transcription-Factor-Repressives	MUC1
+PIAS4	Transcription-Factor-Repressives	MUC1
+PITX1	Transcription-Factor-Repressives	GNRH1	HES1	IFNA1	IRF2	IRF7	JUN	NKX3-1	RUNX1	RUNX2	TERT	TRIB2
+PITX2	Transcription-Factor-Repressives	GNRH1
+PLAGL1	Transcription-Factor-Repressives	SDHB
+PML	Transcription-Factor-Repressives	CCND1	EAF2	EGFR	NR4A1	TNFAIP3	UBA7
+POLR1A	Transcription-Factor-Repressives	E2F1
+POU2F1	Transcription-Factor-Repressives	HBG1	IL4	SNAI2	TWIST1	VCAM1	VWF
+POU3F2	Transcription-Factor-Repressives	PDE5A
+POU5F1	Transcription-Factor-Repressives	BMP4	CDKN1A	CDX2	DKK1	DLX5	EOMES	GATA6	HLX	ID2	TBXT	TBX18
+PPARA	Transcription-Factor-Repressives	ACSL1	APOB	APOBR	APOC3	CPT1A	CYP2C9	IL6R	MMP9	PLIN2	SREBF2	TXNIP	UCP1
+PPARD	Transcription-Factor-Repressives	ANG	ANGPTL4	HSD11B2
+PPARG	Transcription-Factor-Repressives	AGER	APOB	APOBR	BCL2	BCL2L1	CCND1	CCNE1	CFLAR	CIITA	CSF1	EGFR	ERP44	ICAM1	MMP9	MYC	PDK2	PTGS2	REN	SLC2A4	SLC9A1	TG	TSHR
+PRDM1	Transcription-Factor-Repressives	CIITA	GCSAM	LMO2	MYC
+PROX1	Transcription-Factor-Repressives	AKT2	CYP7A1	IFNG	NR1I2	NR5A2	RGS4	TWIST1
+PTMA	Transcription-Factor-Repressives	TLR9
+PTTG1	Transcription-Factor-Repressives	TIMP2
+PURA	Transcription-Factor-Repressives	AR	FAS	PCNA
+RARA	Transcription-Factor-Repressives	ABCC3	ANXA8	CCNA1	MACROD1	MUC5AC
+RB1	Transcription-Factor-Repressives	BRCA1	CDKN1A	DHFR	DNMT3A	E2F1	E2F2	E2F3	FGFR1	FOS	MYC	PCNA	RB1	RBL1	TFDP1
+RBBP7	Transcription-Factor-Repressives	CDH1
+RBL1	Transcription-Factor-Repressives	BRCA1	CCNA2	HIST1H2AE	TFDP1
+RBL2	Transcription-Factor-Repressives	BRCA1	DNMT3B	RAD51
+RBMX	Transcription-Factor-Repressives	EGR1	FOS	FOSL1	JUNB	JUND	KIT	ROS1
+RBPJ	Transcription-Factor-Repressives	PTEN
+REL	Transcription-Factor-Repressives	EPHB2	IL6
+RELA	Transcription-Factor-Repressives	ABCA1	AKT1	AKT2	ALOX5	AR	BACE1	BAX	BCL2	BCL2L1	BCL2L11	BHMT	BIRC2	BIRC3	CCND1	CDKN1A	CFLAR	COL1A2	COL2A1	CXCL8	CYP19A1	EGR1	EPCAM	FAS	GKN2	GNRH2	IL1A	IL6	KLK3	LTC4S	MCL1	MMP9	MYC	NFKBIA	PCK2	PDK4	PGR	PPARD	PTEN	PTGS2	REPS2	SERPINA3	SERPINE1	THBD	TIMP1	TLR3	TNFSF10	TRAF2	TRIB3	VEGFA	XIAP	YY1
+REST	Transcription-Factor-Repressives	BDNF	CARTPT	CD59	DGCR5	GJD2	GRIN1	KCNN4	KCNQ2	KCNQ3	LIN28A	NRP1	OPRM1	PENK	STAT1	TAC1	TH	TUBB3
+RFWD2	Transcription-Factor-Repressives	MMP1	PLAU	COP1
+RFX1	Transcription-Factor-Repressives	MAP1A	MYC	PCNA
+RFX3	Transcription-Factor-Repressives	MAP1A
+RFX5	Transcription-Factor-Repressives	COL1A2
+RORA	Transcription-Factor-Repressives	NPSR1
+RREB1	Transcription-Factor-Repressives	KLK3
+RUNX1	Transcription-Factor-Repressives	IL3	MAD2L1	MYH10	NF1	PF4	SYMPK	VEGFA
+RUNX2	Transcription-Factor-Repressives	IBSP
+RUNX3	Transcription-Factor-Repressives	CCND1	CD36	CFLAR	HES1	HSPD1	ICAM3	JAG1	MMP9	MYC	PEA15	RUNX1	TIAL1	TXN2	WNT4
+RUVBL1	Transcription-Factor-Repressives	TP53
+RXRA	Transcription-Factor-Repressives	ABCC3
+SALL3	Transcription-Factor-Repressives	HDAC9
+SALL4	Transcription-Factor-Repressives	CDH1	PTEN
+SATB1	Transcription-Factor-Repressives	CYBB	IL5
+SATB2	Transcription-Factor-Repressives	TP63
+SETBP1	Transcription-Factor-Repressives	PTPA	PTGER2	PTGS2
+SF1	Transcription-Factor-Repressives	TCERG1
+SFPQ	Transcription-Factor-Repressives	ADARB2	CXCL8	STAT6
+SIM2	Transcription-Factor-Repressives	BCL2
+SIN3A	Transcription-Factor-Repressives	E2F1	KLK3
+SIRT1	Transcription-Factor-Repressives	ADAMTS5	BCL11A	CCAR2	CCND1	CDH1	CDKN1A	CFH	COL10A1	COL1A2	CTNNB1	DLL4	EGLN1	EZH2	FOXO3	HBE1	ICAM1	MMP9	MYC	NOTCH1	NQO1	PAX6	PPARG	TBX3	TNFRSF10B	TP53	WRN	XPC
+SIRT2	Transcription-Factor-Repressives	CDKN1A	NEDD4
+SIX1	Transcription-Factor-Repressives	CDH1
+SKIL	Transcription-Factor-Repressives	ADAM12	SMAD7
+SMAD3	Transcription-Factor-Repressives	CYP17A1	CYP7A1	MMP9	SMAD7	TERT	TGFB1
+SMAD4	Transcription-Factor-Repressives	BTRC	DACH1
+SMAD7	Transcription-Factor-Repressives	CDK1	CDKN1A	CDKN2B	KRT14	TGFBR1
+SMARCA1	Transcription-Factor-Repressives	CD44
+SMARCA4	Transcription-Factor-Repressives	CCND1	CD44	FOS
+SMARCB1	Transcription-Factor-Repressives	CD44
+SMURF2	Transcription-Factor-Repressives	KLF5
+SNAI1	Transcription-Factor-Repressives	CDH1	CLDN3	CXADR	PEBP1	THBS1	VDR
+SNAI2	Transcription-Factor-Repressives	CDH1	CXADR	HPGD	LPAR2	UBE2D3	VDR
+SOX10	Transcription-Factor-Repressives	GJB1	MITF
+SOX17	Transcription-Factor-Repressives	CSNK1A1	FN1	MACC1	NFAT5	SERBP1
+SOX2	Transcription-Factor-Repressives	BMP4	ISL1	MKI67	PAX6	PLAC1	POU4F2	RHO	TUBB3
+SOX6	Transcription-Factor-Repressives	CCNA2	CCND1	CDK4	CTNNB1
+SOX9	Transcription-Factor-Repressives	CDK4	CDKN1A	COL2A1	POU3F2	PRAME	SOX10
+SP1	Transcription-Factor-Repressives	ABCC1	AGTR1	AHR	APEX1	CCNA2	CDK6	CDKN1A	CETP	COL2A1	DNMT1	EGFR	EPOR	HAS2	HSD17B2	HYAL1	ID4	ITGAV	ITGB3	KDR	KRT14	MET	MYCN	P2RX4	POR	PRKCE	PTGS2	RGN	SLC29A1	SOD1	SOD2	TICAM1	TNF	TNFSF10	VEGFA	WIF1
+SP100	Transcription-Factor-Repressives	ETS1
+SP2	Transcription-Factor-Repressives	CEACAM1	HSD17B2	MMP9
+SP3	Transcription-Factor-Repressives	ABCA1	CDKN1A	CETP	COL2A1	EAPP	ETF1	FOXP3	ID4	KDR	LOR	SOX18	TFF2
+SP4	Transcription-Factor-Repressives	KDR
+SPDEF	Transcription-Factor-Repressives	MMP9	PLAUR
+SPI1	Transcription-Factor-Repressives	BCL6	CD68	ITGAX	MACROD1	MAPK1	PARG
+SPIB	Transcription-Factor-Repressives	IRF7
+SREBF1	Transcription-Factor-Repressives	APOA5	BCL2L1	CAV1	IRS2	LRP1	PCK1	PDX1
+SREBF2	Transcription-Factor-Repressives	ABCA1	ABCG5	ABCG8	HNF4A	LRP1	MTTP
+SRF	Transcription-Factor-Repressives	CREB1	SERPINE1
+SRSF1	Transcription-Factor-Repressives	NFKB1
+SSB	Transcription-Factor-Repressives	HAP1
+STAT1	Transcription-Factor-Repressives	CFTR	CXCL10	FCGRT	FGF2	FGFR3	HSP90AA1	IFNA1	IFNB1	IFNG	IL6	IRF1	IVL	MMP13	MMP9	NR1H4	PRKCE
+STAT3	Transcription-Factor-Repressives	BCL2	BCL2L1	CCND1	CTGF	DDIT3	FAS	FGF1	IFNG	IL6	LGALS3BP	LTBP1	MCL1	MICA	MMP2	MMP7	MMP9	MYC	OAS1	PAX3	PGF	PTPN6	TNFRSF10B	TYK2	UCP2	USP7	VDR	VEGFA
+STAT4	Transcription-Factor-Repressives	SOCS3
+STAT5	Transcription-Factor-Repressives	BCL6
+STAT5A	Transcription-Factor-Repressives	BCL6	CCND2	CDKN2B	SUMO1
+STAT5B	Transcription-Factor-Repressives	BCL6
+STAT6	Transcription-Factor-Repressives	CCL11	SELE	STAT1	TLR4
+SUZ12	Transcription-Factor-Repressives	SNAI2	TWIST1
+TAF4	Transcription-Factor-Repressives	ATF7
+TAL1	Transcription-Factor-Repressives	CD34	NFKB1
+TBP	Transcription-Factor-Repressives	BCL2	FUS	IL6	NF1
+TBX2	Transcription-Factor-Repressives	CDKN1A	CDKN2A
+TBX21	Transcription-Factor-Repressives	CCR4	IL13	IL4	PTGDR2
+TBX3	Transcription-Factor-Repressives	CDKN1A	CDKN2A
+TCF12	Transcription-Factor-Repressives	CDH1
+TCF19	Transcription-Factor-Repressives	CCNE1
+TCF3	Transcription-Factor-Repressives	BBC3	CDH1	CDK6	EXO1	MYC	POU5F1
+TCF4	Transcription-Factor-Repressives	HECA	MITF	PTEN
+TCF7L2	Transcription-Factor-Repressives	HECA
+TCFL5	Transcription-Factor-Repressives	CD2
+TEAD4	Transcription-Factor-Repressives	VEGFA
+TFAP2A	Transcription-Factor-Repressives	ACHE	BCL2	CDH1	CDKN1A	HGF	HOXA4	HSD17B1	KLF12	MCAM	MMP9	MUC4
+TFAP2B	Transcription-Factor-Repressives	ADIPOQ
+TFAP2C	Transcription-Factor-Repressives	CDKN1A
+TFAP4	Transcription-Factor-Repressives	MDM2	PPP2R2B
+TFDP1	Transcription-Factor-Repressives	TP53
+TFPT	Transcription-Factor-Repressives	EAF2
+TGIF1	Transcription-Factor-Repressives	SERPINE1	SOX3
+THRA	Transcription-Factor-Repressives	SERPINC1
+THRB	Transcription-Factor-Repressives	CGA
+TLE3	Transcription-Factor-Repressives	RUNX1
+TNFAIP3	Transcription-Factor-Repressives	IRF7	JUN	NFKB1	RELA
+TOB1	Transcription-Factor-Repressives	IL2
+TP53	Transcription-Factor-Repressives	ABCB1	AFP	AKT1	BCL2	BCL2L1	BCL3	BIRC5	BRCA1	BRCA2	CCNB1	CCNB2	CCND1	CDK1	CDK2	CDKN1A	CHEK1	CHEK2	CHUK	CTNNB1	DDB1	DNMT1	E2F1	E2F3	EZH2	FGF2	FOXM1	GADD45A	HNF4A	HSP90AB1	IGF1R	IPO7	KLF2	MAD1L1	MAP4	MCL1	MCM7	MET	MGMT	MMP1	MYC	NKX3-1	PERP	PIAS3	PTPA	PRC1	PTEN	PTTG1	RASSF1	REEP5	SLC2A1	SLC6A6	SSTR2	STAT3	TBXAS1	TCF7L2	TERT	TYMS	UHRF1	VEGFA	WRN	XPO1
+TP63	Transcription-Factor-Repressives	ID2	KLF4
+TP73	Transcription-Factor-Repressives	TERT
+TRAF6	Transcription-Factor-Repressives	VEGFA
+TRERF1	Transcription-Factor-Repressives	CD40	CD80	CD86	LILRB1	LILRB2	LILRB4
+TRIB3	Transcription-Factor-Repressives	ATF4
+TRIM16	Transcription-Factor-Repressives	DES	E2F1	VIM
+TRIM28	Transcription-Factor-Repressives	E2F3	E2F4
+TRPS1	Transcription-Factor-Repressives	RUNX2
+TRRAP	Transcription-Factor-Repressives	MITF
+TSC22D3	Transcription-Factor-Repressives	CDKN1A	FOXO1	FOXO3	FOXO4
+TSG101	Transcription-Factor-Repressives	EGFR	REG4
+TWIST1	Transcription-Factor-Repressives	CDH1	ERBB3	ESR1	F2R	ILK	MYB	NF1	PFDN4	RAP1A	RBL2	RUNX2	SRPX	TIMP1
+TWIST2	Transcription-Factor-Repressives	CDH2	ERBB3	F2R	ILK	MYB	NF1	PFDN4	RAP1A	RBL2	RUNX2	SRPX
+UHRF1	Transcription-Factor-Repressives	ABCB1	PPARG
+URI1	Transcription-Factor-Repressives	AR
+USF1	Transcription-Factor-Repressives	AGT	ASCL2	CYP19A1	CYP1A1	PTGDS	PTGS2	TERT
+USF2	Transcription-Factor-Repressives	ASCL2	CYP19A1	TERT
+VDR	Transcription-Factor-Repressives	CYP24A1	CYP7A1	DKK4	EGFR	IGFBP3	IL10	IL12B	IL2	IL6	PTH	SKP2
+VHL	Transcription-Factor-Repressives	ANGPT2	CXCR4	HIF1A	IGF1R	NMU	TFRC	VEGFA
+WT1	Transcription-Factor-Repressives	AR	CAMP	CCNE1	CDC73	CDH1	CIAO1	CYP19A1	EGFR	IGF1	IGF1R	IGF2	IRF8	MYB	MYC	MYCN	PAX2	PDGFA	STIM1	TBXA2R	TERT	THBS1	UBE2I
+WWP1	Transcription-Factor-Repressives	ERBB4	TGFBR1
+WWTR1	Transcription-Factor-Repressives	ASNS
+XBP1	Transcription-Factor-Repressives	ERP29
+XPC	Transcription-Factor-Repressives	CASP2	RNF111
+XRCC5	Transcription-Factor-Repressives	ETS1
+YBX1	Transcription-Factor-Repressives	ABCB1	ANAPC4	CCNB1	CCNC	CDC20	CKS2	FAS	KPNA2	MMP13	MNAT1	RBBP8	SKP2	SUMO1	TYMS
+YEATS4	Transcription-Factor-Repressives	TP53
+YY1	Transcription-Factor-Repressives	ACTC1	APC	CCR5	CREBBP	CXCR4	EPAS1	FAS	HAS2	HOXB13	IFNG	MUC4	MYC	PDIA6	POSTN	TNFRSF10B	TP53
+ZBTB16	Transcription-Factor-Repressives	BCL2	BID	CCNA2
+ZBTB17	Transcription-Factor-Repressives	CDKN1A
+ZBTB2	Transcription-Factor-Repressives	ARF1	CDKN1A	TP53
+ZBTB5	Transcription-Factor-Repressives	CDKN1A
+ZBTB7A	Transcription-Factor-Repressives	CDKN2A	FOS	MYC	PFKP	PKM	SLC2A3
+ZEB1	Transcription-Factor-Repressives	BCL6	CDH1	CXADR	EPCAM	GRHL2	MUC1	PKP3
+ZEB2	Transcription-Factor-Repressives	CDH1	CXADR	MEOX2
+ZFHX3	Transcription-Factor-Repressives	AFP	MUC5AC	MYB
+ZFP36	Transcription-Factor-Repressives	CXCL8	HIF1A	IL2	IL6	LATS2	VEGFA
+ZFP36L1	Transcription-Factor-Repressives	VEGFA
+ZHX2	Transcription-Factor-Repressives	AFP	CCNA2	CCNE1
+ZIC2	Transcription-Factor-Repressives	TCF4
+ZNF148	Transcription-Factor-Repressives	SOX18	VIM
+ZNF160	Transcription-Factor-Repressives	TLR4
+ZNF202	Transcription-Factor-Repressives	ABCA1	POMGNT1
+ZNF217	Transcription-Factor-Repressives	CDH1
+ZNF224	Transcription-Factor-Repressives	ALDOA
+ZNF239	Transcription-Factor-Repressives	RBP3
+ZNF24	Transcription-Factor-Repressives	PDGFRB	VEGFA
+ZNF267	Transcription-Factor-Repressives	MMP10
+ZNF300	Transcription-Factor-Repressives	CDKN1A	CDKN1B
+ZNF350	Transcription-Factor-Repressives	HMGA2
+ZNF382	Transcription-Factor-Repressives	CDK6	HMGA2	ID1	IKBKE	JUN	MITF	MYC	NFKB1	STAT3	STAT5B
+ZNF383	Transcription-Factor-Repressives	JUN
+ZNF76	Transcription-Factor-Repressives	CDKN1A
