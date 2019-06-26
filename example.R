@@ -21,15 +21,8 @@ GMT_loc<-'./data/TF_GSEA_GMT_FILES/'
 GMT_files <- list.files(GMT_loc,pattern = "*.gmt")
 
 # Quality Control Counts & Meta -------------------------------------------
+#[TODO]
 
-counts_qc<-function(counts){
-  #remove low count wells
-
-  counts
-
-  #remove
-
-}
 
 # DGE Run -----------------------------------------------------------------
 #DESeq2_run(counts_loc,counts_files[1],meta_loc,meta_files[1],column='Target_JAK2')
