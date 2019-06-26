@@ -1,0 +1,36 @@
+Package: TFenricher
+Type: Package
+Title: Gene Set Enrichment Analysis for Transcription Factors from NGS Expression Data
+Version: 0.1.0
+Author: Nathan T. Johnson
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports:
+	limma,
+	tidyverse,
+	edgeR,
+	EBSeq,
+	rlang,
+	stringr,
+	tibble,
+	readr,
+	BiocManager,
+	DESeq2,
+	dplyr,
+	data.table,
+	tximport,
+	tximportData,
+	pasilla,
+	IHW,
+	tidyr,
+	devtools,
+	indRa
+RoxygenNote: 6.1.1
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
