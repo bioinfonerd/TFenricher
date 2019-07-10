@@ -1,0 +1,160 @@
+---
+title: "TFEnricher-Analysis-Example"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r Load In Libraries}
+#load all required libraries
+#library(TFenricher)
+#load all required libraries
+list.of.packages <- c("indRa","limma","tidyverse","EBSeq","edgeR","stringr","tibble","readr",'BiocManager','DESeq2',"dplyr",
+                      "data.table","tximport","tximportData","pasilla","IHW","tidyr", "fgsea","ggplot2","GSA","stats",
+                      "reticulate")
+suppressMessages(lapply(list.of.packages, require, character.only = TRUE))
+
+#until build reflects functions loaded
+devtools::load_all()
+
+```
+
+```{r Load In Location Data}
+locations <- location_info() #variable name must be locations as the global variable
+
+```
+
+```{r DESeq2 Differential Gene Expression Analysis (DGE)}
+#DESeq2
+#count table, meta table, drug to target on
+DESeq2_run(count_file='DGE1_DGE2_counts',
+           meta_file='DGE1_DGE2_meta',
+           target='JAK2')
+#DESeq2_run('DGE1_DGE2_counts','DGE1_DGE2_meta',target='SIK3')
+#DESeq2_run('DGE1_DGE2_counts','DGE1_DGE2_meta',target='PRKCE')
+
+```
+
+
+```{r EdgeR DGE}
+#EdgeR
+edgeR_run(count_file_name='DGE1_DGE2_counts',
+          meta_file_name='DGE1_DGE2_meta',
+          target='JAK2')
+
+
+
+#edgeR_run('DGE1_DGE2_counts','DGE1_DGE2_meta',target='SIK3')
+#edgeR_run('DGE1_DGE2_counts','DGE1_DGE2_meta',target='PRKCE')
+
+```
+
+```{r DGE Test}
+#Artem's DGE Results for JAK2 Target
+
+
+#Nathan's DGE Results For JAK2 Target
+edgeR_JAK2<-read_tsv('../Results/Differential_Gene_Analysis/EdgeR/JAK2_DGE1_DGE2_meta_EdgeR.tsv')
+DESeq2_JAK2<-read_tsv('../Results/Differential_Gene_Analysis/DESeq2/JAK2_DGE1_DGE2_meta_DESeq2.tsv')
+
+#
+
+#conclusion: different statistical analysis 
+
+
+
+```
+
+```{r edgeR top 10 results}
+#edgeR_JAK2 %>% arrange(FDR)
+
+edgeR_JAK2 %>% filter(genes=='CXCL8')
+```
+
+```{r TF GSEA Analysis}
+# TF GSEA Analysis --------------------------------------------------------
+#Rank GSEA Analysis for DESeq2 OR EdgeR & P Adjusted Analysis
+#somtimes an error: 'package:stats' not available when loading, weird Rstudio bug that restarting Rstudio seems to fix
+
+rank_GSEA_single(file='JAK2_DGE1_DGE2_meta_EdgeR',
+                 method_input='EdgeR',
+                 gmt='all_plusISG.gmt')
+```
+
+```{r Load In GSEA Results}
+
+df <- read_tsv(paste('../Results/Gene_Set_Enrichment_Analysis/EdgeR/'
+                     ,'JAK2_DGE1_DGE2_meta_EdgeRall_plusISG.gmtEdgeR.p_adjusted','.tsv',sep=""))
+df %>% arrange(padj)
+
+```
+
+``` {r TF Expression Visualization EdgeR}
+# TF Expression Visualiation ----------------------------------------------
+image = TF_enriched_targets_Violin_Plot(GSEA_result='JAK2_DGE1_DGE2_meta_EdgeRall_plusISG.gmtEdgeR.p_adjusted',
+                                count_file_name='DGE1_DGE2_counts',
+                                meta_file_name='DGE1_DGE2_meta',
+                                TF_name='ISG',
+                                meta_column='JAK2',
+                                DGA_method='EdgeR',
+                                DGA_file='JAK2_DGE1_DGE2_meta_EdgeR')
+image
+```
+
+```{r DESeq2 GSEA}
+
+rank_GSEA_single(file='JAK2_DGE1_DGE2_meta_DESeq2',
+                 method_input='DESeq2',
+                 gmt='all_plusISG.gmt',
+                 type_input='p_adjusted')
+
+```
+
+```{r Load In GSEA Results}
+
+df <- read_tsv(paste('../Results/Gene_Set_Enrichment_Analysis/DESeq2/'
+                     ,'JAK2_DGE1_DGE2_meta_DESeq2all_plusISG.gmtDESeq2.p_adjusted','.tsv',sep=""))
+df %>% arrange(padj)
+
+```
+
+```{r TF Visualization DESeq2}
+image = TF_enriched_targets_Violin_Plot(GSEA_result_loc='../Results/Gene_Set_Enrichment_Analysis/DESeq2/',
+                                GSEA_result='JAK2_DGE1_DGE2_meta_DESeq2all_plusISG.gmtDESeq2.p_adjusted',
+                                count_file_name='DGE1_DGE2_counts',
+                                meta_file_name='DGE1_DGE2_meta',
+                                TF_name='PPARG',
+                                DGA_method='DESeq2',
+                                DGA_file='JAK2_DGE1_DGE2_meta_DESeq2')
+image
+
+```
+
+``` {r Pathway Analysis}
+# Pathway Analysis --------------------------------------------------------
+## If using virtualenv
+#reticulate::use_virtualenv(INDRA, required=TRUE) #while possible to make virtual envs are not recommended for Windows Environment
+reticulate::use_condaenv('INDRA',required=TRUE)
+Gene_Set_Enrichment_loc<-"./Results/Gene_Set_Enrichment_Analysis/"
+Gene_Set_Enrichment_Results<-list.files(Gene_Set_Enrichment_loc,pattern = "*.tsv",recursive = FALSE)
+
+## Access to INDRA is available through indra() function
+indra() # Module(indra)
+
+#[TODO]:  Needs updating
+dijkstra()
+PW <- dijkstra( "JAK2", trgts=c("NFKB1", "STAT1", "STAT2", "STAT3", "IRF1", "IRF3") )
+P <- with(PW, setNames(Path, Gene))
+plotPaths( PW$Path ) + ggthemes::scale_color_few()
+
+```
+

@@ -25,7 +25,39 @@ GMT_files <- list.files(GMT_loc,pattern = "*.gmt")
 
 
 # DGE Run -----------------------------------------------------------------
-#DESeq2_run(counts_loc,counts_files[1],meta_loc,meta_files[1],column='Target_JAK2')
+
+#setup meta information
+
+#load in TAS data
+#assign binding based on 1,2,3 vs 10
+# 1,2,3 = binder, 10 = nonbinder
+# assign everything as NA
+# drugs vs not DMSO
+# concentration as factor
+#Well         Drug  Concentration   Exp Target_JAK2
+
+#what column for sample comparison
+#assumption is = count data columns should = a well in
+
+
+#current version
+
+
+
+#any drug
+
+
+#function:  run DGE, return stat results & save results to result file
+#function: select any drug and automatically parse results
+#
+
+
+
+
+
+
+DESeq2_run(counts_loc,counts_files[1],meta_loc,meta_files[1],column='Target_JAK2')
+
 
 # TF GSEA Analysis --------------------------------------------------------
 Diff_Gene_Expression_Results_loc<-"./Results/Differential_Gene_Analysis/DESeq2/"
@@ -44,8 +76,15 @@ GSEA_results=
 Gene_Set_Enrichment_loc<-"./Results/Gene_Set_Enrichment_Analysis/"
 Gene_Set_Enrichment_Results<-list.files(Gene_Set_Enrichment_loc,pattern = "*.tsv",recursive = FALSE)
 
+tmp<-
+
+df<-meta_load(Gene_Set_Enrichment_loc,Gene_Set_Enrichment_Results[3])
+
 p <- TF_Violin_Plot(Gene_Set_Enrichment_loc,Gene_Set_Enrichment_Results[1],counts_loc,counts_files[1],
-                       meta_loc,meta_files[1],1,'Target_JAK2')
+                       meta_loc,meta_files[1],51,'Target_JAK2')
+df=read.csv(paste(Gene_Set_Enrichment_loc,Gene_Set_Enrichment_Results[1],sep=""),sep='/t')
+
+df <- read.csv(paste(Gene_Set_Enrichment_loc,Gene_Set_Enrichment_Results[1],sep=""),sep='\t',colClasses = "character")
 
 # Pathway Analysis --------------------------------------------------------
 ## If using virtualenv

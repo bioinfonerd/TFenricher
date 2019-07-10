@@ -1,0 +1,152 @@
+---
+title: "ArtemvsNathan"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r Artem's Code: synapse access}
+library( tidyverse )
+
+## Define Synapse downloader(s)
+synapser::synLogin(email='nathan_johnson@hms.harvard.edu',
+    apiKey='07rRy7r0BjxoRPF6YNLFpJBj10LAekFHeCaPwpg2FYNOn4YbINW7RAVkjy7Bf8JqsxED/S5VaJYg14Wi/tDgmQ==')
+syn <- synExtra::synDownloader("./data", ifcollision="overwrite.local")
+syn_csv <- function( id ) {syn(id) %>% read_csv(col_types=cols())}
+
+```
+
+```{r Artem's Code Run}
+
+    ## Download and wrangle DGE data
+    DGE <- loadDGE()
+
+    ## Download ISG list (positive control)
+    ISG <- syn("syn11629935") %>% scan( what=character() )
+
+    ## TAS scores
+    TAS <- syn_csv("syn18268627") %>% mutate_at("name", str_to_lower)
+
+    ## Transcription Factor -> Target relationships
+    fnTF <- str_c("https://raw.githubusercontent.com/bioinfonerd/",
+                  "Transcription-Factor-Databases/master/Ttrust_v2/human_TF_GSEA/all.gmt")
+    TF <- parseTF(fnTF) %>% c( list(ISG=ISG) )
+
+    ## JAK2
+    dfxJAK2 <- myEdgeR( "JAK2", DGE, TAS )
+    tfJAK2 <- dfxJAK2 %>% myGSEA( TF )
+
+
+```
+
+```{r Artem Sample Input Test}
+
+#Artem's
+    DGE <- loadDGE()
+    TAS <- syn_csv("syn18268627") %>% mutate_at("name", str_to_lower)
+    target<-"JAK2"
+    ## Identify binders and non-binders
+    dPos <- TAS %>% filter( symbol == target, tas %in% c(1,2,3) ) %>% pull(name) %>% unique()
+    dNeg <- TAS %>% filter( symbol == target, tas == 10 ) %>% pull(name) %>% unique()
+    ## Pull corresponding wells
+    wPos <- DGE$Y %>% filter( Drug %in% dPos ) %>% select(Well) %>% mutate( Binder = "Yes" )
+    wNeg <- DGE$Y %>% filter( Drug %in% dNeg ) %>% select(Well) %>% mutate( Binder = "No" )
+    ## Compose inputs for edgeR
+    eRY <- bind_rows(wPos, wNeg) %>% mutate_at("Binder", factor, levels=c("No","Yes")) %>%
+        as.data.frame %>% column_to_rownames("Well")
+    eRX <- DGE$X %>% select(HUGO, rownames(eRY)) %>%
+        as.data.frame %>% column_to_rownames("HUGO")
+    ## Create the design matrix and estimate dispersion
+    dl <- edgeR::DGEList( counts = eRX, samples = eRY )
+    dl <- edgeR::calcNormFactors( dl )
+    mmx_A <- model.matrix( ~Binder, data = dl$samples )
+    #mmx_A_t #make orders identical to see if change result (doesn't)
+    
+    dl <- edgeR::estimateDisp( dl, mmx_A )
+    ## Compute differential gene expression
+    gf <- edgeR::glmFit( dl, mmx_A ) %>% edgeR::glmLRT( coef = 2 )
+    output_A<-edgeR::topTags( gf, nrow(eRX) ) %>% as.data.frame %>% rownames_to_column( "Gene" )
+```
+
+```{r Nathan's Input Test}
+#Nathan's (removing any extra print/extra statements (TAS function prints)) (change variables to not overwrite Artem's)
+  count_file_name<-'DGE1_DGE2_counts'
+  meta_file_name<-'DGE1_DGE2_meta'
+  counts_N<-counts_load(count_file_name)
+  meta<-meta_load(meta_file_name)
+  TAS<-TAS_load()
+  meta<-TAS_drug_binder(TAS_tibble=TAS,drug_target=target,meta_tibble=meta)
+  #modify counts & meta data [TODO]: add ability for QC to filter automatically
+  HUGO_N<-counts_N$HUGO#removes HUGO name
+  counts_N <- counts_N[ , (names(counts_N) %in% meta$Well)] #remove unused samples
+  #rownames(counts_N)<-HUGO_N #setting rownames on a tibble is depracated
+  counts_N<-as.data.frame(counts_N) #to match Artem
+  rownames(counts_N)<-HUGO_N
+  
+  #formula
+  formula=as.formula(paste(c('~','Binder',collapse = ' ')))
+  ## Initialize the DGEList object
+  y <- DGEList( counts = counts_N, samples = meta, remove.zeros = FALSE) #count matrix by sample group (remove rows with zeros and changed when gene names are added) (Artem's)
+  
+    #y <- DGEList( counts = counts_N, samples = meta, genes = HUGO_N,remove.zeros = TRUE) #count matrix by sample group (remove rows with zeros) (original)
+  
+  
+  y <- calcNormFactors(y) #normalizes for RNA composition by finding a set of scaling factors for the library sizes that minimize the log-fold changes between the samples for most genes
+  mmx_N <- model.matrix(formula, data = y$samples )
+  y <- estimateDisp( y, mmx_N )
+  glf <- glmFit( y, mmx_N ) %>% glmLRT( coef=2) #consistency with Artem's data
+  ## Perform quasi-likelihood F-test
+  #qlf <- glmQLFit( y, mmx ) %>% glmQLFTest( coef=2:ncol(mmx) ) #possibly better for DGE data due to high 0 data
+
+  # Create the differential expression directory, if needed [TODO]: make into function
+  #output_N<-as.data.frame(topTags(glf,n=nrow(glf$table),p.value = 1))
+  output_N<-edgeR::topTags( gf, nrow(counts_N) ) %>% as.data.frame %>% rownames_to_column( "Gene" )
+```
+
+```{r compare edgeR DGE results}
+
+#final edgeR A vs N output 
+cor(output_A %>% arrange(Gene) %>% select(logCPM),output_N %>% arrange(Gene) %>% select(logCPM))
+cor(output_A %>% arrange(Gene) %>% select(logFC),output_N %>% arrange(Gene) %>% select(logFC))
+cor(output_A %>% arrange(Gene) %>% select(FDR),output_N %>% arrange(Gene) %>% select(FDR))
+print('logCPM highly correlated but not FDR or logFC')
+```
+
+```{r sample input test}
+
+#sample well input?
+identical(meta %>% filter(Binder == 'Yes') %>% arrange(Well) %>% select(Well),
+          wPos %>% arrange(Well) %>% select(Well))
+
+identical(meta %>% filter(Binder == 'No') %>% arrange(Well) %>% select(Well),
+          wNeg %>% arrange(Well) %>% select(Well))
+print('same well input')
+#sample wells in count data?
+identical(names(eRX) %>% sort(),names(counts_N) %>% sort())
+print('Same Wells in Count Data')
+
+#same count data?
+
+#reorder by colnames
+tmp<-names(eRX) %>% sort()
+eRX_t <- eRX[,tmp]
+eRX_t <- as_tibble(eRX_t)
+tmp<-names(counts_N) %>% sort()
+counts_N_t <- counts_N[,tmp]
+identical(counts_N_t,eRX_t)
+print('Same input counts data, however had to reorder columns...')
+
+```
+
+```{r edgeR testing matrix order (doesn't matter)}
+#model matrix
+identical(mmx_A,mmx_N)
+
+tmp<-rownames(mmx_A) %>% sort()
+mmx_A_t <- mmx_A[tmp,]
+
+
+
+```
