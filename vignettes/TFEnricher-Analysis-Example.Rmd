@@ -18,18 +18,29 @@ knitr::opts_chunk$set(
 #load all required libraries
 #library(TFenricher)
 #load all required libraries
-list.of.packages <- c("indRa","limma","tidyverse","EBSeq","edgeR","stringr","tibble","readr",'BiocManager','DESeq2',"dplyr",
-                      "data.table","tximport","tximportData","pasilla","IHW","tidyr", "fgsea","ggplot2","GSA","stats",
-                      "reticulate")
-suppressMessages(lapply(list.of.packages, require, character.only = TRUE))
-
+#list.of.packages <- c("indRa","limma","tidyverse","EBSeq","edgeR","stringr","tibble","readr",'BiocManager','DESeq2',"dplyr","tximport","tximportData","pasilla","IHW","tidyr", "fgsea","ggplot2","GSA","stats","reticulate","synapser","synExtra")
+#suppressMessages(lapply(list.of.packages, require, character.only = TRUE))
+#install.packages("synapser", repos=c("http://ran.synapse.org", "http://cran.fhcrc.org"))
+library(DESeq2)
+library(tidyverse)
+#install.packages("remotes")
+#remotes::install_github("ArtemSokolov/synExtra")
 #until build reflects functions loaded
 devtools::load_all()
+#[TODO]: Fix why this shows up "Welcome, Nathan Johnson!"
+#set working directory
+setwd("C:/Users/Nathan/Documents/@Harvard/Artem/Transcription_Factor_Analysis/git/TFenricher/vignettes")
+
 
 ```
 
-```{r Load In Location Data}
-locations <- location_info() #variable name must be locations as the global variable
+```{r DESeq2 run all conditions DGE}
+DESeq2_run_all('JAK2')
+DESeq2_run_all('SIK3')
+DESeq2_run_all('PRKCE')
+```
+```{r Run all conditions for GSEA analysis}
+
 
 ```
 
@@ -38,16 +49,15 @@ locations <- location_info() #variable name must be locations as the global vari
 #count table, meta table, drug to target on
 DESeq2_run(count_file='DGE1_DGE2_counts',
            meta_file='DGE1_DGE2_meta',
-           target='JAK2')
+           target='SIK3')
 #DESeq2_run('DGE1_DGE2_counts','DGE1_DGE2_meta',target='SIK3')
 #DESeq2_run('DGE1_DGE2_counts','DGE1_DGE2_meta',target='PRKCE')
 
 ```
 
-
 ```{r EdgeR DGE}
 #EdgeR
-edgeR_run(count_file_name='DGE1_DGE2_counts',
+edgeR_JAK2<-edgeR_run(count_file_name='DGE1_DGE2_counts',
           meta_file_name='DGE1_DGE2_meta',
           target='JAK2')
 
@@ -59,12 +69,9 @@ edgeR_run(count_file_name='DGE1_DGE2_counts',
 ```
 
 ```{r DGE Test}
-#Artem's DGE Results for JAK2 Target
-
-
 #Nathan's DGE Results For JAK2 Target
 edgeR_JAK2<-read_tsv('../Results/Differential_Gene_Analysis/EdgeR/JAK2_DGE1_DGE2_meta_EdgeR.tsv')
-DESeq2_JAK2<-read_tsv('../Results/Differential_Gene_Analysis/DESeq2/JAK2_DGE1_DGE2_meta_DESeq2.tsv')
+#DESeq2_JAK2<-read_tsv('../Results/Differential_Gene_Analysis/DESeq2/JAK2_DGE1_DGE2_meta_DESeq2.tsv')
 
 #
 
@@ -75,9 +82,9 @@ DESeq2_JAK2<-read_tsv('../Results/Differential_Gene_Analysis/DESeq2/JAK2_DGE1_DG
 ```
 
 ```{r edgeR top 10 results}
-#edgeR_JAK2 %>% arrange(FDR)
+edgeR_JAK2 %>% arrange(FDR) %>% head()
 
-edgeR_JAK2 %>% filter(genes=='CXCL8')
+edgeR_JAK2 %>% filter(Gene=='CXCL8')
 ```
 
 ```{r TF GSEA Analysis}
@@ -90,24 +97,31 @@ rank_GSEA_single(file='JAK2_DGE1_DGE2_meta_EdgeR',
                  gmt='all_plusISG.gmt')
 ```
 
-```{r Load In GSEA Results}
+```{r Running glm vs qlm edgeR TF GSEA analysis}
 
-df <- read_tsv(paste('../Results/Gene_Set_Enrichment_Analysis/EdgeR/'
-                     ,'JAK2_DGE1_DGE2_meta_EdgeRall_plusISG.gmtEdgeR.p_adjusted','.tsv',sep=""))
-df %>% arrange(padj)
+#glmLRT (JAK2 verification test)
+JAK2_TF_glm<-rank_GSEA_single(file='JAK2_DGE1_DGE2_meta_glmFit_EdgeR',
+                 method_input='EdgeR',
+                 gmt='all_plusISG.gmt')
+JAK2_TF_qlm<-rank_GSEA_single(file='JAK2_DGE1_DGE2_meta_qlmFit_EdgeR',
+                 method_input='EdgeR',
+                 gmt='all_plusISG.gmt')
+```
 
+```{r compare}
+JAK2_TF_glm %>% arrange(padj) %>% head()
+JAK2_TF_qlm %>% arrange(padj) %>% head()
 ```
 
 ``` {r TF Expression Visualization EdgeR}
 # TF Expression Visualiation ----------------------------------------------
-image = TF_enriched_targets_Violin_Plot(GSEA_result='JAK2_DGE1_DGE2_meta_EdgeRall_plusISG.gmtEdgeR.p_adjusted',
+image = TF_enriched_targets_Violin_Plot(GSEA_result='JAK2_DGE1_DGE2_meta_qlmFit_EdgeRall_plusISG.gmtEdgeR.p_adjusted',
                                 count_file_name='DGE1_DGE2_counts',
                                 meta_file_name='DGE1_DGE2_meta',
-                                TF_name='ISG',
-                                meta_column='JAK2',
+                                TF_name='FOS',
                                 DGA_method='EdgeR',
-                                DGA_file='JAK2_DGE1_DGE2_meta_EdgeR')
-image
+                                DGA_file='JAK2_DGE1_DGE2_meta_qlmFit_EdgeR')
+
 ```
 
 ```{r DESeq2 GSEA}
@@ -138,23 +152,3 @@ image = TF_enriched_targets_Violin_Plot(GSEA_result_loc='../Results/Gene_Set_Enr
 image
 
 ```
-
-``` {r Pathway Analysis}
-# Pathway Analysis --------------------------------------------------------
-## If using virtualenv
-#reticulate::use_virtualenv(INDRA, required=TRUE) #while possible to make virtual envs are not recommended for Windows Environment
-reticulate::use_condaenv('INDRA',required=TRUE)
-Gene_Set_Enrichment_loc<-"./Results/Gene_Set_Enrichment_Analysis/"
-Gene_Set_Enrichment_Results<-list.files(Gene_Set_Enrichment_loc,pattern = "*.tsv",recursive = FALSE)
-
-## Access to INDRA is available through indra() function
-indra() # Module(indra)
-
-#[TODO]:  Needs updating
-dijkstra()
-PW <- dijkstra( "JAK2", trgts=c("NFKB1", "STAT1", "STAT2", "STAT3", "IRF1", "IRF3") )
-P <- with(PW, setNames(Path, Gene))
-plotPaths( PW$Path ) + ggthemes::scale_color_few()
-
-```
-

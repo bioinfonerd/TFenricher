@@ -78,6 +78,7 @@ syn_csv <- function( id ) {syn(id) %>% read_csv(col_types=cols())}
   meta<-meta_load(meta_file_name)
   TAS<-TAS_load()
   meta<-TAS_drug_binder(TAS_tibble=TAS,drug_target=target,meta_tibble=meta)
+  meta<-as.data.frame(meta)
   #modify counts & meta data [TODO]: add ability for QC to filter automatically
   HUGO_N<-counts_N$HUGO#removes HUGO name
   counts_N <- counts_N[ , (names(counts_N) %in% meta$Well)] #remove unused samples

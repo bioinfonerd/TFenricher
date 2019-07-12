@@ -33,7 +33,7 @@ diff_method<-function(method_input,type_input){
 
 rank_GSEA_single<-function(DGA_location='../Results/Differential_Gene_Analysis/',
                     file,gmt_location='../data/TF_GSEA_GMT_FILES/',gmt='all_plusISG.gmt',
-                    method_input,type_input='p_adjusted'){
+                    method_input,type_input='p_value'){
   "
   Since different Differential Gene Expression Methods organize output files differently, need condition how to split
   Organization, two lists that organize method and type with what split column should be used
@@ -52,10 +52,12 @@ rank_GSEA_single<-function(DGA_location='../Results/Differential_Gene_Analysis/'
     print("DGE Table Exists")
     table<-read.csv(paste(DGA_location,tmp[length(tmp)],'/',file,'.tsv',sep=""),sep='\t') #read in data
     rank_gene_pval <- 1 - as.vector(t(table[diff_method(method_input,type_input)])) #fill vector with numeric (1 - vector to invert functiont to put more significance on lower numbers)
+    #print(head(rank_gene_pval))
+    names(rank_gene_pval) <- table$Gene #id each gene
     print(head(rank_gene_pval))
-        names(rank_gene_pval) <- table$genes #id each gene
     rank_gene_pval<-na.omit(rank_gene_pval) #remove NAs
     gsea<-gmtPathways(paste(c(gmt_location,gmt),collapse = ''))
+    print('before fgsea')
     output <- fgsea(pathways = gsea,
                     stats = rank_gene_pval,
                     minSize = 5,
@@ -68,6 +70,7 @@ rank_GSEA_single<-function(DGA_location='../Results/Differential_Gene_Analysis/'
 
     #write data
     fwrite(output, file=paste(c("../Results/Gene_Set_Enrichment_Analysis/EdgeR/",file,gmt,names(diff_method(method_input,type_input)),'.tsv'),collapse = ''), sep="\t", sep2=c("", " ", ""))
+    return(output)
 
   } else{
     print("DGE Table Does Not Exist")

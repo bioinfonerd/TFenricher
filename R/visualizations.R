@@ -1,3 +1,5 @@
+
+#plots TF targets from edge list in GSEA analysis
 TF_enriched_targets_Violin_Plot<-function(DGA_location='../Results/Differential_Gene_Analysis/',
                                           GSEA_result_loc='../Results/Gene_Set_Enrichment_Analysis/EdgeR/',
                                           GSEA_result,
@@ -24,13 +26,14 @@ TF_enriched_targets_Violin_Plot<-function(DGA_location='../Results/Differential_
   counts <- data.table(t(counts))
   colnames(counts)<-genes
   counts$Well <- samples
-  meta <- meta[c("Well","binding")]
+  meta <- meta[c("Well","Binder")]
   final <- merge(counts,meta,by="Well")
   final <- subset(final, select = -c(Well) )
   name<-names(final)
   final <- final %>% gather(Gene,Expression,name[1:length(name)-1])
-  p<-ggplot(final, aes_string(x="Gene", y="Expression", color="binding")) +
-    geom_violin(trim=FALSE) +
+
+  p<-ggplot(final, aes_string(x="Gene", y="Expression", fill="Binder")) +
+    geom_violin(trim=FALSE, color = NA, scale = "width") +
     ggtitle(TF_name) +
     xlab('TF Targets Indicating Enrichment') +
     theme(axis.text.x = element_text(angle = 90))
@@ -42,17 +45,18 @@ TF_enriched_targets_Violin_Plot<-function(DGA_location='../Results/Differential_
   table<-read.csv(paste(DGA_location,tmp[length(tmp)],'/',DGA_file,'.tsv',sep=""),sep='\t') #read in data
   print('Target Genes Significance')
   if(DGA_method=='EdgeR'){
-    print(table %>% filter(genes %in% TARGETS) %>% select (genes,FDR))
+    print(table %>% filter(Gene %in% TARGETS) %>% select (genes,FDR))
     return(p)
   }
   if(DGA_method=='DESeq2'){
-    print(table %>% filter(genes %in% TARGETS) %>% select (genes,padj))
+    print(table %>% filter(Gene %in% TARGETS) %>% select (genes,padj))
     return(p)
   }
   print('DGA Method Not Available')
 }
 
-
+#[TODO]: plot all possible targets (? unsure if needed since genes are not filtered out unless not expressed,
+#be alot of empty space in a heatmap)
 TF_all_targets_heatmap_Plot<-function(GSEA_result_loc='../Results/Gene_Set_Enrichment_Analysis/EdgeR/',
                                                                        GSEA_result,
                                                                        count_file_name,
@@ -107,7 +111,7 @@ TF_all_targets_heatmap_Plot<-function(GSEA_result_loc='../Results/Gene_Set_Enric
   return(p)
 }
 
-
+#other ideas to verify positive controls are correct
 
 #drugs that bind this, but what about strong affinity with other targets?  At least a report
 #strong negative control for same target

@@ -1,10 +1,3 @@
-library( tidyverse )
-
-## Define Synapse downloader(s)
-synapser::synLogin(email='nathan_johnson@hms.harvard.edu',
-    apiKey='07rRy7r0BjxoRPF6YNLFpJBj10LAekFHeCaPwpg2FYNOn4YbINW7RAVkjy7Bf8JqsxED/S5VaJYg14Wi/tDgmQ==')
-syn <- synExtra::synDownloader("./data", ifcollision="overwrite.local")
-syn_csv <- function( id ) {syn(id) %>% read_csv(col_types=cols())}
 
 ## Removes wells that have fewer than threshold counts (total, across all genes) in them
 ## Returns filtered Y data frame
